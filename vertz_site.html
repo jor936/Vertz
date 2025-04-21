@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERTZ | Performance com Estilo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #00ff88;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+      padding: 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      background-color: #00ff88;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #00e676;
+    }
+
+    .store {
+      padding: 60px 40px;
+      background-color: #111;
+    }
+
+    .store h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #00ff88;
+      text-align: center;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .category {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .category h3 {
+      color: white;
+      font-size: 20px;
+    }
+
+    .about {
+      padding: 60px 40px;
+      background-color: #181818;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      color: #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      color: #cccccc;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+      background-color: #0a0a0a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VERTZ</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#loja">Loja</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Performance com Estilo</h1>
+      <p>Moda casual, social e esportiva para quem vive em movimento. VERTZ é o seu ritmo.</p>
+      <button class="btn">Conheça a Coleção</button>
+    </div>
+  </section>
+
+  <section class="store" id="loja">
+    <h2>Categorias da Loja</h2>
+    <div class="categories">
+      <div class="category">
+        <img src="https://via.placeholder.com/300x200?text=Casual" alt="Casual">
+        <h3>Casual</h3>
+      </div>
+      <div class="category">
+        <img src="https://via.placeholder.com/300x200?text=Social" alt="Social">
+        <h3>Social</h3>
+      </div>
+      <div class="category">
+        <img src="https://via.placeholder.com/300x200?text=Esportivo" alt="Esportivo">
+        <h3>Esportivo</h3>
+      </div>
+      <div class="category">
+        <img src="https://via.placeholder.com/300x200?text=Academia" alt="Academia">
+        <h3>Academia</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <h2>Sobre a VERTZ</h2>
+    <p>A VERTZ nasceu da fusão entre performance e estilo. Nossa missão é vestir pessoas determinadas, que valorizam conforto, autenticidade e presença. Unimos o melhor da moda casual, social e esportiva para acompanhar cada movimento do seu dia — do treino à reunião, do lazer ao desafio. Com materiais de qualidade, design inteligente e atitude, somos mais que uma marca: somos ritmo, energia e expressão.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 VERTZ. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
